@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sfml" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/sfml" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+					<Add directory="SFML-2.5.1-windows-gcc-7.3.0-mingw-32-bit/SFML-2.5.1/include" />
+					<Add directory="include" />
+					<Add directory="funciones" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-audio-d" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-network-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+					<Add directory="SFML-2.5.1-windows-gcc-7.3.0-mingw-32-bit/SFML-2.5.1/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/sfml" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="funciones" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-network" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="funciones/Colission.cpp" />
+		<Unit filename="funciones/Colission.h" />
+		<Unit filename="funciones/Continuar.h" />
+		<Unit filename="funciones/entidad.h" />
+		<Unit filename="funciones/ia.cpp" />
+		<Unit filename="funciones/ia.h" />
+		<Unit filename="funciones/ia2.cpp" />
+		<Unit filename="funciones/ia2.h" />
+		<Unit filename="funciones/juego.cpp" />
+		<Unit filename="funciones/juego.h" />
+		<Unit filename="funciones/jugador.cpp" />
+		<Unit filename="funciones/jugador.h" />
+		<Unit filename="funciones/mapas.cpp" />
+		<Unit filename="funciones/mapas.h" />
+		<Unit filename="funciones/menu.cpp" />
+		<Unit filename="funciones/menu.h" />
+		<Unit filename="funciones/menu2.cpp" />
+		<Unit filename="funciones/menu2.h" />
+		<Unit filename="funciones/menu3.cpp" />
+		<Unit filename="funciones/menu3.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="sfml-audio-2.dll" />
+		<Unit filename="sfml-audio-d-2.dll" />
+		<Unit filename="sfml-graphics-2.dll" />
+		<Unit filename="sfml-graphics-d-2.dll" />
+		<Unit filename="sfml-network-2.dll" />
+		<Unit filename="sfml-network-d-2.dll" />
+		<Unit filename="sfml-system-2.dll" />
+		<Unit filename="sfml-system-d-2.dll" />
+		<Unit filename="sfml-window-2.dll" />
+		<Unit filename="sfml-window-d-2.dll" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
